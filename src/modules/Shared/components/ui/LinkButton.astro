@@ -1,0 +1,7 @@
+---
+const { className, href } = Astro.props;
+---
+
+<a href={href} class={`px-4 py-2 border-2 border-black ${className}`}>
+  <slot />
+</a>

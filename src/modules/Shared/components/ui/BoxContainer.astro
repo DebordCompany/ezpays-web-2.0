@@ -1,10 +1,10 @@
 ---
-const { background } = Astro.props;
+const { background, className } = Astro.props;
 ---
 
 <div
-  class="max-w-8xl w-full h-dvh px-4 py-16 snap-start m-auto"
-  style={{ backgroundImage: `url(${background})` }}
+  class=`max-w-8xl w-full min-h-dvh px-4 py-16 snap-start m-auto bg-top md:bg-left-top bg-top ${className}`
+  style={{ background: background, backgroundPosition: "top" }}
 >
   <slot />
 </div>

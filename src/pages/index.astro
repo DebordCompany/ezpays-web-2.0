@@ -1,26 +1,37 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import HallHome from "../modules/Home/components/sections/HallHome.astro";
+import HeroHome from "../modules/Home/components/sections/HeroHome.astro";
 import BoxContainer from "../modules/Shared/components/ui/BoxContainer.astro";
-import LinkButton from "../modules/Shared/components/ui/LinkButton.astro";
+import PaymentsHome from "../modules/Home/components/sections/PaymentsHome.astro";
+import ClientsHome from "../modules/Home/components/sections/ClientsHome.astro";
+import RecoveryHome from "../modules/Home/components/sections/RecoveryHome.astro";
+import ConciliationHome from "../modules/Home/components/sections/ConciliationHome.astro";
 ---
 
 <Layout>
-  <BoxContainer background="/images/hero-bg.webp">
-    <div class="flex flex-col justify-end h-full gap-4">
-      <h1 class="text-black text-7xl font-bold">Tecnología que cobra</h1>
-      <h2 class="text-white">Tu proceso de cobro en piloto automático</h2>
-      <div>
-        <LinkButton href="/"> Haz una demo </LinkButton>
-      </div>
-    </div>
+  <BoxContainer
+    background="url('/images/hero-bg.webp')"
+    className="grid place-content-end justify-start"
+  >
+    <HeroHome />
   </BoxContainer>
   <BoxContainer>
-    <h1 class="font-bold text-3xl">hola mundo</h1>
+    <HallHome />
   </BoxContainer>
   <BoxContainer>
-    <h1 class="font-bold text-3xl">hola mundo</h1>
+    <PaymentsHome />
   </BoxContainer>
   <BoxContainer>
-    <h1 class="font-bold text-3xl">hola mundo</h1>
+    <ClientsHome />
+  </BoxContainer>
+  <BoxContainer
+    background="linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(36,36,36,1) 100%)"
+    className="grid place-content-center"
+  >
+    <RecoveryHome />
+  </BoxContainer>
+  <BoxContainer>
+    <ConciliationHome />
   </BoxContainer>
 </Layout>

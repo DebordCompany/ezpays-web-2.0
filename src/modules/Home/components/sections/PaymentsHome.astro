@@ -1,0 +1,77 @@
+---
+import BankIcon from "../../../Shared/components/icons/BankIcon.astro";
+import DocumentIcon from "../../../Shared/components/icons/DocumentIcon.astro";
+import EzpaysNewIcon from "../../../Shared/components/icons/EzpaysNewIcon.astro";
+
+const solutions = [
+  "Espera de transferencias",
+  "Visitas comerciales",
+  "Emails a clientes",
+  "Llamadas a clientes",
+  "Incidencias de todo tipo",
+  "Fechas de pago fallidas",
+  "Fraccionamientos del pago",
+  "Reenviar facturas",
+  "Devoluciones",
+  "Conciliaciones",
+  "Discusiones",
+  "Pérdida de clientes",
+  "Negociaciones",
+  "Tesorería",
+];
+---
+
+<section
+  class="grid grid-cols-1 md:grid-cols-2 md:place-items-center gap-8 h-full"
+>
+  <div class="flex flex-col justify-between h-full gap-4 md:max-w-[80%]">
+    <div class="flex flex-col gap-4">
+      <h2 class="text-3xl font-bold">Soluciona las tareas de cobro</h2>
+      <p>
+        {
+          solutions.map((solution) => {
+            return (
+              <span class="font-light odd:font-semibold">{solution}, </span>
+            );
+          })
+        }
+      </p>
+    </div>
+    <img
+      src="/images/payments-home.png"
+      alt="payments home image"
+      class="rounded-md"
+    />
+  </div>
+  <div class="flex flex-col justify-between gap-8 h-full md:max-w-[80%]">
+    <div class="flex flex-col gap-4">
+      <div class="text-primary">
+        <EzpaysNewIcon />
+      </div>
+      <p class="font-bold text-lg">
+        Olvida las tareas para cobrar Configura tus politicas de cobro Mejora
+        las relaciones comerciales
+      </p>
+    </div>
+    <div class="flex flex-col gap-4">
+      <div class="flex gap-4 items-center">
+        <div>
+          <DocumentIcon />
+        </div>
+        <div class="text-primary">
+          <EzpaysNewIcon />
+        </div>
+        <div>
+          <BankIcon />
+        </div>
+      </div>
+      <div class="flex flex-col-reverse md:flex-col gap-2">
+        <p>
+          Cobra o resuelve atrasos de clientes Conciliación automática
+          Automatizacion de principio a fin
+        </p>
+        <h3 class="font-bold text-3xl">Tu empresa solo tendrá que facturar</h3>
+      </div>
+    </div>
+  </div>
+</section>

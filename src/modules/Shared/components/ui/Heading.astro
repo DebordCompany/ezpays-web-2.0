@@ -1,0 +1,12 @@
+---
+type Props = {
+  level?: "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
+  className?: string;
+};
+const { level, className } = Astro.props;
+const HeadTitle = level ?? "h1";
+---
+
+<HeadTitle class={`font-bold text-3xl md:text-5xl ${className} `}>
+  <slot />
+</HeadTitle>

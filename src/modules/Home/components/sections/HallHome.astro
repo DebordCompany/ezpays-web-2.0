@@ -1,21 +1,27 @@
-<section
-  class="grid grid-cols-1 md:grid-cols-2 place-items-center gap-4 h-full"
->
-  <div>
+---
+import Heading from "../../../Shared/components/ui/Heading.astro";
+---
+
+<section class="grid grid-cols-1 grid-rows-1 md:grid-cols-2 gap-16">
+  <div
+    class="max-h-full w-auto aspect-video md:aspect-auto overflow-hidden rounded-md md:p-8"
+  >
     <img
       src="/images/conector.png"
       alt="conector image"
-      class="max-h-[70dvh] rounded-md aspect-video md:aspect-auto object-cover"
+      class="object-cover object-center h-full w-full md:w-fit rounded-md"
     />
   </div>
-  <div class="flex flex-col gap-4 md:max-w-[80%]">
-    <h2 class="font-bold text-3xl">
+  <div class="flex flex-col gap-4">
+    <Heading level="h2">
       Conecta y pon tus cobros en piloto automático
-    </h2>
+    </Heading>
     <div class="flex flex-col gap-2">
       <div class="flex flex-col gap-2">
-        <h3 class="relative font-bold text-soft-gray text-5xl">
-          <span class="text-black text-base absolute top-0 -left-2">1</span
+        <h3 class="relative font-bold text-soft-gray text-xl md:text-4xl">
+          <span
+            class="text-black text-base absolute top-0 -left-3 md:-left-3 md:-left-2"
+            >1</span
           >Cobrar
         </h3>
         <p>Haz que tu empresa cobre cuando corresponde de cuenta a cuenta</p>
@@ -24,8 +30,9 @@
     </div>
     <div class="flex flex-col gap-2">
       <div class="flex flex-col gap-2">
-        <h3 class="relative font-bold text-soft-gray text-5xl">
-          <span class="text-black text-base absolute top-0 -left-2">2</span
+        <h3 class="relative font-bold text-soft-gray text-xl md:text-4xl">
+          <span class="text-black text-base absolute top-0 -left-3 md:-left-2"
+            >2</span
           >Impagos
         </h3>
         <p>
@@ -36,8 +43,9 @@
     </div>
     <div class="flex flex-col gap-2">
       <div class="flex flex-col gap-2">
-        <h3 class="relative font-bold text-soft-gray text-5xl">
-          <span class="text-black text-base absolute top-0 -left-2">3</span
+        <h3 class="relative font-bold text-soft-gray text-xl md:text-4xl">
+          <span class="text-black text-base absolute top-0 -left-3 md:-left-2"
+            >3</span
           >Conciliar
         </h3>
         <p>Haz que tu empresa tenga los datos actualizados al instante.</p>

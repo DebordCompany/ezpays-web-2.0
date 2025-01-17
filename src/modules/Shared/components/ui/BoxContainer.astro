@@ -3,8 +3,12 @@ const { background, className } = Astro.props;
 ---
 
 <div
-  class=`max-w-8xl w-full min-h-dvh px-4 py-16 snap-start m-auto bg-top md:bg-left-top bg-top ${className}`
-  style={{ background: background, backgroundPosition: "top" }}
+  class=`max-w-8xl w-full min-h-dvh px-8 grid place-content-center place-items-center py-16 snap-start m-auto  ${className}`
+  style={{
+    background: background,
+    backgroundPosition: "top",
+    backgroundSize: "cover",
+  }}
 >
   <slot />
 </div>

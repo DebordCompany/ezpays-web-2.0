@@ -1,4 +1,5 @@
 ---
+import Footer from "../modules/Shared/components/Sections/Footer.astro";
 import Header from "../modules/Shared/components/Sections/Header.astro";
 ---
 
@@ -11,11 +12,12 @@ import Header from "../modules/Shared/components/Sections/Header.astro";
     <meta name="generator" content={Astro.generator} />
     <title>Ezpays || pagos 360</title>
   </head>
-  <body class="font-poppins text-black">
+  <body class="font-poppins text-black bg-neutral-50">
     <Header />
-    <main class="md:snap-mandatory md:snap-y md:h-dvh md:overflow-y-auto">
+    <main class="">
       <slot />
     </main>
+    <Footer/>
   </body>
 </html>
 

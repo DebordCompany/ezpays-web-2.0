@@ -11,15 +11,14 @@ import ConciliationHome from "../modules/Home/components/sections/ConciliationHo
 
 <Layout>
   <BoxContainer
-    background="url('/images/hero-bg.jpg')"
-    className="grid place-content-end justify-start"
-  >
+    background="url('/images/hero-bg.webp')"
+    className="grid place-content-end justify-start min-h-dvh md:min-h-[80dvh]">
     <HeroHome />
   </BoxContainer>
   <BoxContainer>
     <HallHome />
   </BoxContainer>
-  <BoxContainer>
+  <BoxContainer background="linear-gradient(-270deg, rgba(255,255,255,1) 0%, rgba(240,240,240,1) 100%);">
     <PaymentsHome />
   </BoxContainer>
   <BoxContainer>
@@ -31,7 +30,7 @@ import ConciliationHome from "../modules/Home/components/sections/ConciliationHo
   >
     <RecoveryHome />
   </BoxContainer>
-  <BoxContainer>
+  <!-- <BoxContainer>
     <ConciliationHome />
-  </BoxContainer>
+  </BoxContainer> -->
 </Layout>

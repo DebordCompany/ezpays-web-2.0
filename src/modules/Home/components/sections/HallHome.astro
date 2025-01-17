@@ -2,55 +2,57 @@
 import Heading from "../../../Shared/components/ui/Heading.astro";
 ---
 
-<section class="grid grid-cols-1 grid-rows-1 md:grid-cols-2 gap-16">
+<section class="flex flex-col h-auto lg:flex-row items-stretch gap-8 md:gap-40">
   <div
-    class="max-h-full w-auto aspect-video md:aspect-auto overflow-hidden rounded-md md:p-8"
-  >
+    class=" w-full lg:max-w-xl aspect-video lg:aspect-[4/5] overflow-hidden rounded-2xl">
     <img
       src="/images/conector.png"
       alt="conector image"
-      class="object-cover object-center h-full w-full md:w-fit rounded-md"
+      class="object-cover object-left h-full w-full lg:w-fit rounded-md"
     />
   </div>
-  <div class="flex flex-col gap-4">
+  <div class="flex flex-col justify-between gap-4 max-w-2xl h-auto">
     <Heading level="h2">
       Conecta y pon tus cobros en piloto automático
     </Heading>
-    <div class="flex flex-col gap-2">
+    <div>
       <div class="flex flex-col gap-2">
-        <h3 class="relative font-bold text-soft-gray text-xl md:text-4xl">
-          <span
-            class="text-black text-base absolute top-0 -left-3 md:-left-3 md:-left-2"
-            >1</span
-          >Cobrar
-        </h3>
-        <p>Haz que tu empresa cobre cuando corresponde de cuenta a cuenta</p>
-        <hr />
+        <div class="flex flex-col gap-2">
+          <h3 class="relative font-bold text-soft-gray text-xl md:text-4xl">
+            <span
+              class="text-black text-base absolute top-0 -left-3 md:-left-3 md:-left-2"
+              >1</span
+            >Cobrar
+          </h3>
+          <p>Haz que tu empresa cobre cuando corresponde de cuenta a cuenta</p>
+          <hr />
+        </div>
       </div>
-    </div>
-    <div class="flex flex-col gap-2">
       <div class="flex flex-col gap-2">
-        <h3 class="relative font-bold text-soft-gray text-xl md:text-4xl">
-          <span class="text-black text-base absolute top-0 -left-3 md:-left-2"
-            >2</span
-          >Impagos
-        </h3>
-        <p>
-          Haz que tu empresa cobre los impagos, sin molestar a sus clientes.
-        </p>
-        <hr />
+        <div class="flex flex-col gap-2">
+          <h3 class="relative font-bold text-soft-gray text-xl md:text-4xl">
+            <span class="text-black text-base absolute top-0 -left-3 md:-left-2"
+              >2</span
+            >Impagos
+          </h3>
+          <p>
+            Haz que tu empresa cobre los impagos, sin molestar a sus clientes.
+          </p>
+          <hr />
+        </div>
       </div>
-    </div>
-    <div class="flex flex-col gap-2">
       <div class="flex flex-col gap-2">
-        <h3 class="relative font-bold text-soft-gray text-xl md:text-4xl">
-          <span class="text-black text-base absolute top-0 -left-3 md:-left-2"
-            >3</span
-          >Conciliar
-        </h3>
-        <p>Haz que tu empresa tenga los datos actualizados al instante.</p>
-        <hr />
+        <div class="flex flex-col gap-2">
+          <h3 class="relative font-bold text-soft-gray text-xl md:text-4xl">
+            <span class="text-black text-base absolute top-0 -left-3 md:-left-2"
+              >3</span
+            >Conciliar
+          </h3>
+          <p>Haz que tu empresa tenga los datos actualizados al instante.</p>
+          <hr />
+        </div>
       </div>
+
     </div>
   </div>
 </section>

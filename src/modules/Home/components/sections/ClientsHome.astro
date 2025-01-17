@@ -3,14 +3,21 @@ import FullIcon from "../../../Shared/components/icons/FullIcon.astro";
 import LockIcon from "../../../Shared/components/icons/LockIcon.astro";
 import PaymentIcon from "../../../Shared/components/icons/PaymentIcon.astro";
 import TouchIcon from "../../../Shared/components/icons/TouchIcon.astro";
+import Heading from "../../../Shared/components/ui/Heading.astro";
 ---
 
 <section
-  class="grid grid-cols-1 md:grid-cols-2 gap-4 place-content-center place-items-center h-full"
->
-  <div class="h-full flex flex-col justify-between gap-12">
+  class="flex flex-col h-auto lg:flex-row items-stretch gap-8 md:gap-40">
+<div class=" w-full lg:max-w-xl aspect-video lg:aspect-[4/5] overflow-hidden rounded-2xl">
+  <img
+    src="/images/clients-home.png"
+    alt="clients ezpays example"
+    class="object-cover object-left h-full w-full lg:w-fit rounded-2xl"
+  />
+</div>
+  <div class="flex flex-col justify-between gap-20 max-w-2xl h-auto">
     <div class="flex flex-col gap-2">
-      <h2 class="font-bold text-3xl">De la cuenta del cliente a tu cuenta</h2>
+      <Heading>De la cuenta del cliente a tu cuenta</Heading>
       <p>
         Tus facuras pagadas de cuanta a cuenta Tu cliente paga con seguridad
         desde su factura Conciliacion de los cobros en tu ERP
@@ -22,7 +29,7 @@ import TouchIcon from "../../../Shared/components/icons/TouchIcon.astro";
       </div>
     </div>
     <div class="flex flex-col gap-2">
-      <h2 class="font-bold text-3xl">Tu empresa solo tendrá que facturar</h2>
+      <Heading>Tu empresa solo tendrá que facturar</Heading>
       <p>
         Cuando depende de tu cliente el pago de la factura, hazlo fácil para
         él.Añade el botón de pago al enviar tu factura para pagar en el momento.
@@ -33,11 +40,5 @@ import TouchIcon from "../../../Shared/components/icons/TouchIcon.astro";
       </div>
     </div>
   </div>
-  <div class="h-full">
-    <img
-      src="/images/clients-home.png"
-      alt="clients ezpays example"
-      class="object-cover rounded-md aspect-video md:aspect-auto max-h-[70dvh]"
-    />
-  </div>
+  
 </section>

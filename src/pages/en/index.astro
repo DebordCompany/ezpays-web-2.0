@@ -1,5 +1,4 @@
 ---
-import Layout from "../../layouts/Layout.astro";
 import HallHome from "../../modules/Home/components/sections/HallHome.astro";
 import HeroHome from "../../modules/Home/components/sections/HeroHome.astro";
 import BoxContainer from "../../modules/Shared/components/ui/BoxContainer.astro";
@@ -9,9 +8,10 @@ import RecoveryHome from "../../modules/Home/components/sections/RecoveryHome.as
 import CallToAction from "../../modules/Home/components/sections/CallToAction.astro";
 
 import en from "../../modules/Shared/i18n/EN.json"
+import LayoutEN from "../../layouts/LayoutEN.astro";
 ---
 
-<Layout>
+<LayoutEN>
   <BoxContainer
     background="url('/images/hero-bg.webp')"
     className="grid place-content-end justify-start min-h-screen xl:min-h-[80vh]">
@@ -33,4 +33,4 @@ import en from "../../modules/Shared/i18n/EN.json"
   <BoxContainer>
     <CallToAction lang={en}/>
   </BoxContainer>
-</Layout>
+</LayoutEN>

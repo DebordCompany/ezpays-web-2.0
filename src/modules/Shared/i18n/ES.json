@@ -98,6 +98,15 @@
     },
     "navbar": {
       "access": "Iniciar Sesión"
+    },
+    "cookies": {
+      "title": "Utilizamos cookies propias pero no de terceros",
+      "accept": {
+        "text": "Aceptar"
+      },
+      "decline": {
+        "text": "Rechazar"
+      }
     }
   }
 }

@@ -1,0 +1,21 @@
+---
+const {lang} = Astro.props
+---
+<script>
+   
+        const cookies = document.querySelector("#cookies");
+        const cookiesButton = document.querySelector("#cookiesButton");
+        if (cookiesButton && cookies) {
+            cookiesButton.addEventListener('click', ()=>{
+                
+                cookies.classList.add("hidden");
+            });
+        }
+    
+</script>
+<div id="cookies" class="fixed bottom-0 left-0 right-0 px-8 py-12 text-center bg-white flex flex-col gap-2 justify-center items-center md:w-fit md:left-auto md:right-4 md:bottom-4 md:rounded-2xl md:flex-row md:p-3 md:flex-wrap-reverse md:shadow-lg md:border-2 md:border-black">
+    <p>{lang.shared.cookies.title}</p>
+    <div>
+        <button id="cookiesButton" class="bg-black text-white px-4 py-2 rounded-lg ml-4">{lang.shared.cookies.accept.text}</button>
+    </div>
+</div>

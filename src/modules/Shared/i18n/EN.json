@@ -98,6 +98,15 @@
     },
     "navbar": {
       "access": "Login"
+    },
+    "cookies": {
+      "title": "We use our own cookies but not third-party cookies",
+      "accept": {
+        "text": "Accept"
+      },
+      "decline": {
+        "text": "Reject"
+      }
     }
   }
 }

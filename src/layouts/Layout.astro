@@ -1,4 +1,5 @@
 ---
+import Cookies from "../modules/Shared/components/Sections/Cookies.astro";
 import Footer from "../modules/Shared/components/Sections/Footer.astro";
 import Header from "../modules/Shared/components/Sections/Header.astro";
 
@@ -19,6 +20,7 @@ import lang from "../modules/Shared/i18n/ES.json"
     <main class="">
       <slot />
     </main>
+    <Cookies lang={lang} client:load/>
     <Footer/>
   </body>
 </html>

@@ -1,15 +1,19 @@
 ---
 import Heading from "../../../Shared/components/ui/Heading.astro";
 import LinkButton from "../../../Shared/components/ui/LinkButton.astro";
+
+const {lang} = Astro.props
+
+
 ---
 
 <section class="flex flex-col justify-end h-full gap-4 pb-12">
   <Heading level="h1" className="text-4xl md:text-[80px] text-white"
-    >Tecnologia que cobra</Heading
+    >{lang.home.hero.title}</Heading
   >
   <div>
-    <LinkButton href="https://platform.ezpays.io/register">
-      Haz una demo
+    <LinkButton href={lang.home.hero.button.link}>
+      {lang.home.hero.button.text}
     </LinkButton>
   </div>
 </section>

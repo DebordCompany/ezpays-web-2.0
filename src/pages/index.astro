@@ -7,28 +7,30 @@ import PaymentsHome from "../modules/Home/components/sections/PaymentsHome.astro
 import ClientsHome from "../modules/Home/components/sections/ClientsHome.astro";
 import RecoveryHome from "../modules/Home/components/sections/RecoveryHome.astro";
 import ConciliationHome from "../modules/Home/components/sections/ConciliationHome.astro";
+
+import es from "../modules/Shared/i18n/ES.json"
 ---
 
 <Layout>
   <BoxContainer
     background="url('/images/hero-bg.webp')"
     className="grid place-content-end justify-start min-h-dvh md:min-h-[80dvh]">
-    <HeroHome />
+    <HeroHome lang={es}/>
   </BoxContainer>
   <BoxContainer>
-    <HallHome />
+    <HallHome lang={es}/>
   </BoxContainer>
   <BoxContainer background="linear-gradient(-270deg, rgba(255,255,255,1) 0%, rgba(240,240,240,1) 100%);">
-    <PaymentsHome />
+    <PaymentsHome lang={es}/>
   </BoxContainer>
   <BoxContainer>
-    <ClientsHome />
+    <ClientsHome lang={es}/>
   </BoxContainer>
   <BoxContainer
     background="linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(36,36,36,1) 100%)"
     className="grid place-content-center"
   >
-    <RecoveryHome />
+    <RecoveryHome lang={es}/>
   </BoxContainer>
   <!-- <BoxContainer>
     <ConciliationHome />

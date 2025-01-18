@@ -1,0 +1,64 @@
+
+    {
+      "home": {
+        "hero": {
+          "title": "Technology that charges",
+          "button": {
+            "text": "Make a demo",
+            "link": "/"
+          }
+        },
+        "hall": {
+          "title": "Connect and put your collections on autopilot",
+          "items": [
+            {
+              "title": "Charge",
+              "description": "Make your company charge when it is due from account to account"
+            },
+            {
+              "title": "Unpaid",
+              "description": "Make your company collect unpaid payments, without disturbing your customers."
+            },
+            {
+              "title": "Reconcile",
+              "description": "Make your company have the data updated instantly."
+            }
+          ]
+        },
+        "payment": {
+          "title": "Solve the collection tasks",
+          "description": [
+            "Transfer wait",
+            "Sales visits",
+            "Emails to customers",
+            "Calls to customers",
+            "All kinds of incidents",
+            "Failed payment dates",
+            "Payment installments",
+            "Resend invoices",
+            "Returns",
+            "Reconciliations",
+            "Discussions",
+            "Loss of customers",
+            "Negotiations",
+            "Treasury"
+          ],
+          "subtitle": "Forget about collection tasks Set up your collection policies Improve business relationships",
+          "footer": {
+            "title": "Your company will only have to invoice",
+            "subtitle": "Collect or resolve customer arrears Automatic reconciliation Automation from start to finish"
+          }
+        },
+        "client": {
+          "header": {
+            "title": "From the client's account to your account",
+            "subtitle": "Your invoices paid from account to account Your client pays securely from your invoice Reconciliation of collections in your ERP"
+          },
+          "footer": {
+            "title": "Your company will only have to invoice",
+            "subtitle": "When it depends on your client to pay the invoice, make it easy for him. Add the payment button when sending your invoice to pay at the moment. Or keep your client informed of when to pay."
+          }
+        }
+      }
+    }
+  

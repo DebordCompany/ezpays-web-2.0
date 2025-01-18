@@ -1,34 +1,36 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import HallHomeEN from "../../modules/Home/components/sections/en/HallHomeEN.astro";
-import HeroHomeEN from "../../modules/Home/components/sections/en/HeroHomeEN.astro";
+import HallHome from "../../modules/Home/components/sections/HallHome.astro";
+import HeroHome from "../../modules/Home/components/sections/HeroHome.astro";
 import BoxContainer from "../../modules/Shared/components/ui/BoxContainer.astro";
-import PaymentsHomeEN from "../../modules/Home/components/sections/en/PaymentsHomeEN.astro";
-import ClientsHomeEN from "../../modules/Home/components/sections/en/ClientsHomeEN.astro";
-import RecoveryHomeEN from "../../modules/Home/components/sections/en/RecoveryHomeEN.astro";
-import ConciliationHomeEN from "../../modules/Home/components/sections/en/ConciliationHomeEN.astro";
+import PaymentsHome from "../../modules/Home/components/sections/PaymentsHome.astro";
+import ClientsHome from "../../modules/Home/components/sections/ClientsHome.astro";
+import RecoveryHome from "../../modules/Home/components/sections/RecoveryHome.astro";
+import ConciliationHome from "../../modules/Home/components/sections/ConciliationHome.astro";
+
+import en from "../../modules/Shared/i18n/EN.json"
 ---
 
 <Layout>
   <BoxContainer
     background="url('/images/hero-bg.webp')"
     className="grid place-content-end justify-start min-h-dvh md:min-h-[80dvh]">
-    <HeroHomeEN />
+    <HeroHome lang={en}/>
   </BoxContainer>
   <BoxContainer>
-    <HallHomeEN />
+    <HallHome lang={en}/>
   </BoxContainer>
   <BoxContainer background="linear-gradient(-270deg, rgba(255,255,255,1) 0%, rgba(240,240,240,1) 100%);">
-    <PaymentsHomeEN />
+    <PaymentsHome lang={en}/>
   </BoxContainer>
   <BoxContainer>
-    <ClientsHomeEN />
+    <ClientsHome lang={en}/>
   </BoxContainer>
   <BoxContainer
     background="linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(36,36,36,1) 100%)"
     className="grid place-content-center"
   >
-    <RecoveryHomeEN />
+    <RecoveryHome lang={en}/>
   </BoxContainer>
   <!-- <BoxContainer>
     <ConciliationHome />

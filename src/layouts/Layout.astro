@@ -3,11 +3,11 @@ import Cookies from "../modules/Shared/components/Sections/Cookies.astro";
 import Footer from "../modules/Shared/components/Sections/Footer.astro";
 import Header from "../modules/Shared/components/Sections/Header.astro";
 
-import lang from "../modules/Shared/i18n/ES.json"
+import lang from "../modules/Shared/i18n/ES.json";
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
@@ -16,12 +16,12 @@ import lang from "../modules/Shared/i18n/ES.json"
     <title>Ezpays || pagos 360</title>
   </head>
   <body class="font-poppins text-black bg-neutral-50">
-    <Header lang={lang}/>
+    <Header lang={lang} />
     <main class="">
       <slot />
     </main>
-    <Cookies lang={lang} client:load/>
-    <Footer/>
+    <Cookies lang={lang} />
+    <Footer />
   </body>
 </html>
 

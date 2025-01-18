@@ -1,0 +1,36 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import HallHomeEN from "../../modules/Home/components/sections/en/HallHomeEN.astro";
+import HeroHomeEN from "../../modules/Home/components/sections/en/HeroHomeEN.astro";
+import BoxContainer from "../../modules/Shared/components/ui/BoxContainer.astro";
+import PaymentsHomeEN from "../../modules/Home/components/sections/en/PaymentsHomeEN.astro";
+import ClientsHomeEN from "../../modules/Home/components/sections/en/ClientsHomeEN.astro";
+import RecoveryHomeEN from "../../modules/Home/components/sections/en/RecoveryHomeEN.astro";
+import ConciliationHomeEN from "../../modules/Home/components/sections/en/ConciliationHomeEN.astro";
+---
+
+<Layout>
+  <BoxContainer
+    background="url('/images/hero-bg.webp')"
+    className="grid place-content-end justify-start min-h-dvh md:min-h-[80dvh]">
+    <HeroHomeEN />
+  </BoxContainer>
+  <BoxContainer>
+    <HallHomeEN />
+  </BoxContainer>
+  <BoxContainer background="linear-gradient(-270deg, rgba(255,255,255,1) 0%, rgba(240,240,240,1) 100%);">
+    <PaymentsHomeEN />
+  </BoxContainer>
+  <BoxContainer>
+    <ClientsHomeEN />
+  </BoxContainer>
+  <BoxContainer
+    background="linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(36,36,36,1) 100%)"
+    className="grid place-content-center"
+  >
+    <RecoveryHomeEN />
+  </BoxContainer>
+  <!-- <BoxContainer>
+    <ConciliationHome />
+  </BoxContainer> -->
+</Layout>

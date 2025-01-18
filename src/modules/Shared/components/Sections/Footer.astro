@@ -1,10 +1,16 @@
+---
+const url = Astro.url.pathname
+const isHome = url === '/'
+const isEnglish = url === '/en'
+const activeClass = "text-neutral-400"
+---
 <footer class="flex justify-center">
     <div class="max-w-8xl w-full px-8 py-12 flex justify-end items-start min-h-40 md:min-h-96">
 
         <p class="font-black  text-xl md:text-4xl">
-            <span class="cursor-pointer">ES</span>
+            <a class={isHome ? "" : activeClass} href="/">ES</a>
             <span>/</span>
-            <span class="cursor-pointer">EN</span>
+            <a class={isEnglish ? "" : activeClass} href="/en">EN</a>
         </p>
     </div>
 </footer>

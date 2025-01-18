@@ -4,6 +4,8 @@ import LockIcon from "../../../Shared/components/icons/LockIcon.astro";
 import PaymentIcon from "../../../Shared/components/icons/PaymentIcon.astro";
 import TouchIcon from "../../../Shared/components/icons/TouchIcon.astro";
 import Heading from "../../../Shared/components/ui/Heading.astro";
+
+const {lang} = Astro.props
 ---
 
 <section
@@ -17,10 +19,9 @@ import Heading from "../../../Shared/components/ui/Heading.astro";
 </div>
   <div class="flex flex-col justify-between gap-20 max-w-2xl h-auto">
     <div class="flex flex-col gap-2">
-      <Heading>De la cuenta del cliente a tu cuenta</Heading>
+      <Heading>{lang.home.client.header.title}</Heading>
       <p>
-        Tus facuras pagadas de cuanta a cuenta Tu cliente paga con seguridad
-        desde su factura Conciliacion de los cobros en tu ERP
+        {lang.home.client.header.subtitle}
       </p>
       <div class="flex items-center gap-4">
         <TouchIcon className="w-8"/>
@@ -29,11 +30,9 @@ import Heading from "../../../Shared/components/ui/Heading.astro";
       </div>
     </div>
     <div class="flex flex-col gap-2">
-      <Heading>Tu empresa solo tendrá que facturar</Heading>
+      <Heading>{lang.home.client.footer.title}</Heading>
       <p>
-        Cuando depende de tu cliente el pago de la factura, hazlo fácil para
-        él.Añade el botón de pago al enviar tu factura para pagar en el momento.
-        O ten informado a tu cliente de cuándo pagar.
+        {lang.home.client.footer.subtitle}
       </p>
       <div>
         <FullIcon className="w-18"/>

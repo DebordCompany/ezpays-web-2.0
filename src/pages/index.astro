@@ -6,7 +6,7 @@ import BoxContainer from "../modules/Shared/components/ui/BoxContainer.astro";
 import PaymentsHome from "../modules/Home/components/sections/PaymentsHome.astro";
 import ClientsHome from "../modules/Home/components/sections/ClientsHome.astro";
 import RecoveryHome from "../modules/Home/components/sections/RecoveryHome.astro";
-import ConciliationHome from "../modules/Home/components/sections/ConciliationHome.astro";
+import CallToAction from "../modules/Home/components/sections/CallToAction.astro";
 
 import es from "../modules/Shared/i18n/ES.json"
 ---
@@ -14,7 +14,7 @@ import es from "../modules/Shared/i18n/ES.json"
 <Layout>
   <BoxContainer
     background="url('/images/hero-bg.webp')"
-    className="grid place-content-end justify-start min-h-dvh md:min-h-[80dvh]">
+    className="grid place-content-end justify-start min-h-screen xl:min-h-[80vh]">
     <HeroHome lang={es}/>
   </BoxContainer>
   <BoxContainer>
@@ -27,12 +27,10 @@ import es from "../modules/Shared/i18n/ES.json"
     <ClientsHome lang={es}/>
   </BoxContainer>
   <BoxContainer
-    background="linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(36,36,36,1) 100%)"
-    className="grid place-content-center"
-  >
+    background="linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(36,36,36,1) 100%)">
     <RecoveryHome lang={es}/>
   </BoxContainer>
-  <!-- <BoxContainer>
-    <ConciliationHome />
-  </BoxContainer> -->
+  <BoxContainer>
+    <CallToAction lang={es}/>
+  </BoxContainer>
 </Layout>

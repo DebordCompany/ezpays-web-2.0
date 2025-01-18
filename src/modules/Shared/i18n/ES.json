@@ -1,46 +1,103 @@
-
-    {"home": {
-        "hero": {
-            "title": "Tecnologia que cobra",
-            "button": {
-                "text": "Haz una demo",
-                "link": "/"
-            }
+{
+  "home": {
+    "hero": {
+      "title": "Tecnologia que cobra",
+      "button": {
+        "text": "Haz una demo",
+        "link": "/"
+      }
+    },
+    "hall": {
+      "title": "Conecta y pon tus cobros en piloto automático",
+      "items": [
+        {
+          "title": "Cobrar",
+          "description": "Haz que tu empresa cobre cuando corresponde de cuenta a cuenta"
         },
-        "hall": {
-            "title": "Conecta y pon tus cobros en piloto automático",
-            "items": [
-                {
-                    "title": "Cobrar",
-                    "description": "Haz que tu empresa cobre cuando corresponde de cuenta a cuenta"
-                },
-                {
-                    "title": "Impagos",
-                    "description": "Haz que tu empresa cobre los impagos, sin molestar a sus clientes."
-                },
-                {
-                    "title": "Conciliar",
-                    "description": "Haz que tu empresa tenga los datos actualizados al instante."
-                }
-            ]
+        {
+          "title": "Impagos",
+          "description": "Haz que tu empresa cobre los impagos, sin molestar a sus clientes."
         },
-        "payment":{
-            "title": "Soluciona las tareas de cobro",
-            "description": ["Espera de transferencias,"," Visitas comerciales,"," Emails a clientes,"," Llamadas a clientes,"," Incidencias de todo tipo,"," Fechas de pago fallidas,"," Fraccionamientos del pago,"," Reenviar facturas,"," Devoluciones, Conciliaciones,"," Discusiones,"," Pérdida de clientes,"," Negociaciones,"," Tesorería,"],
-            "subtitle": "Olvida las tareas para cobrar Configura tus politicas de cobro Mejora las relaciones comerciales",
-            "footer": {
-                "title": "Tu empresa solo tendrá que facturar",
-                "subtitle": "Cobra o resuelve atrasos de clientes Conciliación automática Automatizacion de principio a fin"
-            }
-        },
-        "client": {
-            "header": {
-                "title": "De la cuenta del cliente a tu cuenta",
-                "subtitle": "Tus facuras pagadas de cuanta a cuenta Tu cliente paga con seguridad desde su factura Conciliacion de los cobros en tu ERP"
-            },
-            "footer": {
-                "title": "Tu empresa solo tendrá que facturar",
-                "subtitle": "Cuando depende de tu cliente el pago de la factura, hazlo fácil para él.Añade el botón de pago al enviar tu factura para pagar en el momento. O ten informado a tu cliente de cuándo pagar."
-            }
+        {
+          "title": "Conciliar",
+          "description": "Haz que tu empresa tenga los datos actualizados al instante."
         }
-    }}
+      ]
+    },
+    "payment": {
+      "title": "Soluciona las tareas de cobro",
+      "description": [
+        "Espera de transferencias,",
+        " Visitas comerciales,",
+        " Emails a clientes,",
+        " Llamadas a clientes,",
+        " Incidencias de todo tipo,",
+        " Fechas de pago fallidas,",
+        " Fraccionamientos del pago,",
+        " Reenviar facturas,",
+        " Devoluciones, Conciliaciones,",
+        " Discusiones,",
+        " Pérdida de clientes,",
+        " Negociaciones,",
+        " Tesorería,"
+      ],
+      "subtitle": "Olvida las tareas para cobrar Configura tus politicas de cobro Mejora las relaciones comerciales",
+      "footer": {
+        "title": "Tu empresa solo tendrá que facturar",
+        "subtitle": "Cobra o resuelve atrasos de clientes Conciliación automática Automatizacion de principio a fin"
+      }
+    },
+    "client": {
+      "header": {
+        "title": "De la cuenta del cliente a tu cuenta",
+        "subtitle": "Tus facuras pagadas de cuanta a cuenta Tu cliente paga con seguridad desde su factura Conciliacion de los cobros en tu ERP"
+      },
+      "footer": {
+        "title": "Lo que facturas cobrado en su momento",
+        "subtitle": "Cuando depende de tu cliente el pago de la factura, hazlo fácil para él.Añade el botón de pago al enviar tu factura para pagar en el momento. O ten informado a tu cliente de cuándo pagar."
+      }
+    },
+    "recovery": {
+      "title": "Tus impagos cobrados",
+      "subtitle": [
+        "Tú empresa dejará de perseguir clientes y reclamar para cobrar",
+        " La tecnología lo soluciona con tu cliente, sin intervenciones personales",
+        " El sistema comunica, resuelve y cobra Aunque haya pasado algún tiempo"
+      ],
+      "button": {
+        "text": "Recupera deuda",
+        "link": "/"
+      },
+      "footer": {
+        "title": "Cobra impagos de años anteriores en 30 dias",
+        "description": [
+          "Tu empresa puede crear ingresos no esperados cobrando impagos de años anteriores con tecnología.",
+          "Creas un sencillo fichero con los datos necesarios y comienzas a recibir pagos que no esperabas directamente en la cuenta de tu empresa."
+        ],
+        "button": {
+          "text": "Comenzar a cobrar",
+          "link": "/"
+        },
+        "claim": "Estás a un fichero de cobrar"
+      }
+    }
+  },
+  "shared": {
+    "call_to_action": {
+      "title": "Estas a una demo de la tecnología que cobra",
+      "subtitle": [
+        "En minutos verás cómo cobras una factura o solventas un impago para tu empresa",
+        "Nuestros clientes dejaron atrás las pesadas tareas de cobro y reclamaciones",
+        "Personalizaron el proceso con la imagen de empresa y su sistema de pago",
+        "Acompañados y asesorados permanentemente"
+      ],
+      "button": {
+        "text": "Agendar demo",
+        "link": "/"
+      }
+    },
+    "navbar": {
+      "access": "Iniciar Sesión"
+    }
+  }
+}

@@ -1,64 +1,103 @@
-
-    {
-      "home": {
-        "hero": {
-          "title": "Technology that charges",
-          "button": {
-            "text": "Make a demo",
-            "link": "/"
-          }
+{
+  "home": {
+    "hero": {
+      "title": "Technology that charges",
+      "button": {
+        "text": "Make a demo",
+        "link": "/"
+      }
+    },
+    "hall": {
+      "title": "Connect and put your collections on autopilot",
+      "items": [
+        {
+          "title": "Charge",
+          "description": "Make your company charge when it is due from account to account"
         },
-        "hall": {
-          "title": "Connect and put your collections on autopilot",
-          "items": [
-            {
-              "title": "Charge",
-              "description": "Make your company charge when it is due from account to account"
-            },
-            {
-              "title": "Unpaid",
-              "description": "Make your company collect unpaid payments, without disturbing your customers."
-            },
-            {
-              "title": "Reconcile",
-              "description": "Make your company have the data updated instantly."
-            }
-          ]
+        {
+          "title": "Unpaid",
+          "description": "Make your company collect unpaid payments, without disturbing your customers."
         },
-        "payment": {
-          "title": "Solve the collection tasks",
-          "description": [
-            "Transfer wait",
-            "Sales visits",
-            "Emails to customers",
-            "Calls to customers",
-            "All kinds of incidents",
-            "Failed payment dates",
-            "Payment installments",
-            "Resend invoices",
-            "Returns",
-            "Reconciliations",
-            "Discussions",
-            "Loss of customers",
-            "Negotiations",
-            "Treasury"
-          ],
-          "subtitle": "Forget about collection tasks Set up your collection policies Improve business relationships",
-          "footer": {
-            "title": "Your company will only have to invoice",
-            "subtitle": "Collect or resolve customer arrears Automatic reconciliation Automation from start to finish"
-          }
-        },
-        "client": {
-          "header": {
-            "title": "From the client's account to your account",
-            "subtitle": "Your invoices paid from account to account Your client pays securely from your invoice Reconciliation of collections in your ERP"
-          },
-          "footer": {
-            "title": "Your company will only have to invoice",
-            "subtitle": "When it depends on your client to pay the invoice, make it easy for him. Add the payment button when sending your invoice to pay at the moment. Or keep your client informed of when to pay."
-          }
+        {
+          "title": "Reconcile",
+          "description": "Make your company have the data updated instantly."
         }
+      ]
+    },
+    "payment": {
+      "title": "Solve the collection tasks",
+      "description": [
+        "Transfer wait",
+        "Sales visits",
+        "Emails to customers",
+        "Calls to customers",
+        "All kinds of incidents",
+        "Failed payment dates",
+        "Payment installments",
+        "Resend invoices",
+        "Returns, Reconciliations",
+        "Discussions",
+        "Loss of customers",
+        "Negotiations",
+        "Treasury"
+      ],
+      "subtitle": "Forget about collection tasks Set up your collection policies Improve business relationships",
+      "footer": {
+        "title": "Your company will only have to invoice",
+        "subtitle": "Collect or resolve customer arrears Automatic reconciliation Automation from start to finish"
+      }
+    },
+    "client": {
+      "header": {
+        "title": "From the client's account to your account",
+        "subtitle": "Your invoices paid from account to account Your client pays securely from your invoice Reconciliation of collections in your ERP"
+      },
+      "footer": {
+        "title": "What you invoice collected at the time",
+        "subtitle": "When it depends on your client to pay the invoice, make it easy for him. Add the payment button when sending your invoice to pay at the moment. Or keep your client informed of when to pay."
+      }
+    },
+    "recovery": {
+      "title": "Your unpaid collected",
+      "subtitle": [
+        "Your company will stop chasing customers and claiming to collect",
+        "Technology solves it with your client, without personal interventions",
+        "The system communicates, resolves and charges Even if some time has passed"
+      ],
+      "button": {
+        "text": "Recover debt",
+        "link": "/"
+      },
+      "footer": {
+        "title": "Collect unpaid payments from previous years in 30 days",
+        "description": [
+          "Your company can create unexpected income by collecting unpaid payments from previous years with technology.",
+          "You create a simple file with the necessary data and start receiving payments that you did not expect directly in your company's account."
+        ],
+        "button": {
+          "text": "Start charging",
+          "link": "/"
+        },
+        "claim": "You are one file away from charging"
       }
     }
-  
+  },
+  "shared": {
+    "call_to_action": {
+      "title": "You are one demo away from the technology that charges",
+      "subtitle": [
+        "In minutes you will see how you collect an invoice or solve an unpaid payment for your company",
+        "Our clients left behind the heavy tasks of collection and claims",
+        "They personalized the process with the company image and their payment system",
+        "Accompanied and advised permanently"
+      ],
+      "button": {
+        "text": "Schedule demo",
+        "link": "/"
+      }
+    },
+    "navbar": {
+      "access": "Login"
+    }
+  }
+}

@@ -1,40 +1,54 @@
+---
+import BankIcon from "../../../Shared/components/icons/BankIcon.astro";
+import DocumentIcon from "../../../Shared/components/icons/DocumentIcon.astro";
+import EzpaysNewIcon from "../../../Shared/components/icons/EzpaysNewIcon.astro";
+import SlideIcon from "../../../Shared/components/icons/SlideIcon.astro";
+import Heading from "../../../Shared/components/ui/Heading.astro";
+import LinkButton from "../../../Shared/components/ui/LinkButton.astro";
+
+const {lang} = Astro.props
+
+---
+
 <section
-  class="text-white flex flex-col gap-8 justify-center h-full m-auto w-full"
+  class="flex flex-col-reverse h-auto lg:flex-row items-stretch gap-8 md:gap-40 text-white"
 >
-  <h2 class="font-bold text-3xl">Ha cobrado tu empresa?</h2>
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-    <div>
-      <h3 class="text-5xl font-bold">Si</h3>
-      <p>Concilias automáticamente tus cobros?</p>
-      <p>Te pueden devolver el recibo?</p>
-      <p>Te pueden anular el pago por tarjeta?</p>
-      <p>Cual es la comisión de cobro?</p>
-      <p>Tardasen tener el dinero en cuenta?</p>
-      <p>Solo cobras online con tarjeta?</p>
+  <div class="flex flex-col justify-between gap-12 max-w-xl h-auto">
+    <div class="flex flex-col gap-4">
+      <Heading level="h2" className="">{lang.home.recovery.title}</Heading>
+      <ul class="text-soft-gray flex flex-col gap-2">
+        {
+          lang.home.recovery.subtitle.map((sub: string)=>{
+            return(
+              <li>{sub}</li>
+            )
+          })
+        }
+      </ul>
+      <LinkButton className="w-fit bg-primary">{lang.home.recovery.button.text}</LinkButton>
     </div>
-    <div>
-      <h3 class="text-5xl font-bold">No</h3>
-      <p>Te toca avisar a tu cliente?</p>
-      <p>Te ha pedido las facturas?</p>
-      <p>Tendrás que reclamar el pago?</p>
-      <p>Cuánto tarda en cobrar tu empresa?</p>
-      <p>Llamas por teléfono a tu cliente?</p>
-      <p>Te toca insistir para que pague?</p>
+    <div class="flex flex-col gap-4">
+        <h3  class="text-2xl md:text-4xl">{lang.home.recovery.footer.title}</h3>
+        <ul class="text-soft-gray flex flex-col gap-2">
+          {lang.home.recovery.footer.description.map((des: string)=>{
+            return(
+              <li>{des}</li>
+            )
+          })}
+        </ul>
+        <div class="flex items-center flex-wrap gap-4">
+          <p>1.000.000</p>
+          <SlideIcon className="max-w-24 md:w-full"/>
+          <p>270.000</p>
+        </div>
+        <LinkButton className="w-fit bg-white !text-black" href={lang.home.recovery.footer.button.link}>{lang.home.recovery.footer.button.text}</LinkButton>
     </div>
   </div>
-  <div class="">
-    <h3 class="font-bold text-4xl">mas...</h3>
-    <p>
-      Esta tecnología ha sido creada para empresas con clientes que pagan
-      mayormente por transferencia.
-    </p>
-    <p>
-      Que necesitan tener sus datos de cobro actualizados al instante de forma
-      automática.
-    </p>
-    <p>
-      Y que cuando se presenta un impago, el sistema contacte, ayude al cliente,
-      lo guíe y cobre, sin molestar.
-    </p>
+  <div class="w-full lg:max-w-xl aspect-video lg:aspect-[4/5] overflow-hidden rounded-2xl">
+    <img
+      src="/images/impagos.jpg"
+      class="object-cover object-center h-full w-full lg:w-fit rounded-md"
+    />
+    
   </div>
 </section>

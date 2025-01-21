@@ -4,8 +4,7 @@ import DocumentIcon from "../../../Shared/components/icons/DocumentIcon.astro";
 import EzpaysNewIcon from "../../../Shared/components/icons/EzpaysNewIcon.astro";
 import Heading from "../../../Shared/components/ui/Heading.astro";
 
-const {lang} = Astro.props
-
+const { lang } = Astro.props;
 ---
 
 <section
@@ -25,12 +24,13 @@ const {lang} = Astro.props
       </p>
     </div>
     <div class="flex flex-col-reverse md:flex-col gap-4">
-      <div class="text-primary">
-        <EzpaysNewIcon />
-      </div>
-      <p class="font-bold text-xl md:text-3xl">
-        {lang.home.payment.subtitle}
-      </p>
+      <ul class="font-bold text-xl md:text-3xl">
+        {
+          lang.home.payment.subtitle.map((text: string) => {
+            return <li>{text}</li>;
+          })
+        }
+      </ul>
     </div>
     <div class="flex flex-col-reverse md:flex-col gap-4">
       <div class="flex gap-4 items-center">
@@ -48,16 +48,21 @@ const {lang} = Astro.props
         <p>
           {lang.home.payment.footer.subtitle}
         </p>
-        <h3 class="font-bold text-xl md:text-3xl">{lang.home.payment.footer.title}</h3>
+        <h3 class="font-bold text-xl md:text-3xl">
+          {lang.home.payment.footer.title}
+        </h3>
       </div>
     </div>
   </div>
-  <div class="w-full lg:max-w-xl aspect-video lg:aspect-[4/5] overflow-hidden rounded-2xl">
+  <div
+    class="w-full lg:max-w-xl aspect-video lg:aspect-[4/5] overflow-hidden rounded-2xl"
+  >
     <video
       src="/images/payment.mp4"
-      autoplay muted loop
+      autoplay
+      muted
+      loop
       class="object-cover object-left h-full w-full lg:w-fit rounded-md"
-    />
-    
+    ></video>
   </div>
 </section>

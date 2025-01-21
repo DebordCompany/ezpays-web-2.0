@@ -41,7 +41,11 @@
         " Negociaciones,",
         " Tesorería,"
       ],
-      "subtitle": "Olvida las tareas para cobrar Configura tus politicas de cobro Mejora las relaciones comerciales",
+      "subtitle": [
+        "Olvida las tareas para cobrar",
+        "Configura tus politicas de cobro ",
+        " Mejora las relaciones comerciales"
+      ],
       "footer": {
         "title": "Tu empresa solo tendrá que facturar",
         "subtitle": "Cobra o resuelve atrasos de clientes Conciliación automática Automatizacion de principio a fin"

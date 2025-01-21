@@ -6,8 +6,14 @@ const { lang } = Astro.props;
   document.addEventListener("DOMContentLoaded", () => {
     const cookies = document.querySelector("#cookies");
     const cookiesButton = document.querySelector("#cookiesButton");
+    const storage = localStorage.getItem("cookies");
+    console.log(storage);
+    if (storage) {
+      cookies?.classList.add("hidden");
+    }
     if (cookiesButton && cookies) {
       cookiesButton.addEventListener("click", () => {
+        localStorage.setItem("cookies", JSON.stringify(true));
         cookies.classList.add("hidden");
       });
     }

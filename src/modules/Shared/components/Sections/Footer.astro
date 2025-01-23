@@ -1,16 +1,41 @@
 ---
-const url = Astro.url.pathname
-const isHome = url === '/'
-const isEnglish = url === '/en'
-const activeClass = "text-neutral-400"
----
-<footer class="flex justify-center bg-neutral-100 mt-20">
-    <div class="max-w-8xl w-full p-8 flex justify-end items-start min-h-40 md:min-h-96 ">
+import FacebookIcon from "../icons/FacebookIcon.astro";
+import LinkedinIcon from "../icons/LinkedinIcon.astro";
+import YoutubeIcon from "../icons/YoutubeIcon.astro";
 
-        <p class="font-black  text-xl md:text-4xl">
-            <a class={isHome ? "" : activeClass} href="/">ES</a>
-            <span>/</span>
-            <a class={isEnglish ? "" : activeClass} href="/en">EN</a>
-        </p>
+const url = Astro.url.pathname;
+const isHome = url === "/";
+const isEnglish = url === "/en";
+const activeClass = "text-neutral-400";
+---
+
+<footer class="flex justify-center bg-neutral-100 mt-20">
+  <div
+    class="max-w-8xl w-full p-8 flex flex-col justify-start gap-8 items-end min-h-40 md:min-h-96"
+  >
+    <div>
+      <p class="font-black text-xl md:text-4xl">
+        <a class={isHome ? "" : activeClass} href="/">ES</a>
+        <span>/</span>
+        <a class={isEnglish ? "" : activeClass} href="/en">EN</a>
+      </p>
     </div>
+    <div class="flex gap-4 items-center">
+      <a href="https://www.facebook.com/Ezpays.io" target="_blank">
+        <FacebookIcon />
+      </a>
+      <a
+        href="https://www.youtube.com/channel/UCZLYvWEG99iJaHySSzUFpOw"
+        target="_blank"
+      >
+        <YoutubeIcon />
+      </a>
+      <a
+        href="https://www.linkedin.com/company/ezpaysio/posts/?feedView=all"
+        target="_blank"
+      >
+        <LinkedinIcon />
+      </a>
+    </div>
+  </div>
 </footer>

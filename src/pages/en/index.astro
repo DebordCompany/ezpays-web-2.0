@@ -1,4 +1,5 @@
 ---
+import Layout from "../../layouts/Layout.astro";
 import HallHome from "../../modules/Home/components/sections/HallHome.astro";
 import HeroHome from "../../modules/Home/components/sections/HeroHome.astro";
 import BoxContainer from "../../modules/Shared/components/ui/BoxContainer.astro";
@@ -7,30 +8,32 @@ import ClientsHome from "../../modules/Home/components/sections/ClientsHome.astr
 import RecoveryHome from "../../modules/Home/components/sections/RecoveryHome.astro";
 import CallToAction from "../../modules/Home/components/sections/CallToAction.astro";
 
-import en from "../../modules/Shared/i18n/EN.json"
-import LayoutEN from "../../layouts/LayoutEN.astro";
+import lang from "../../modules/Shared/i18n/EN.json";
 ---
 
-<LayoutEN>
+<Layout>
   <BoxContainer
-    background="url('/images/hero-bg.webp')"
-    className="grid place-content-end justify-start min-h-screen xl:min-h-[80vh]">
-    <HeroHome lang={en}/>
+    className="grid place-content-end justify-start min-h-screen 2xl:min-h-[80vh] hero-bg"
+  >
+    <HeroHome lang={lang} />
   </BoxContainer>
   <BoxContainer>
-    <HallHome lang={en}/>
-  </BoxContainer>
-  <BoxContainer background="linear-gradient(-270deg, rgba(255,255,255,1) 0%, rgba(240,240,240,1) 100%);">
-    <PaymentsHome lang={en}/>
-  </BoxContainer>
-  <BoxContainer>
-    <ClientsHome lang={en}/>
+    <HallHome lang={lang} />
   </BoxContainer>
   <BoxContainer
-    background="linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(36,36,36,1) 100%)">
-    <RecoveryHome lang={en}/>
+    background="linear-gradient(-270deg, rgba(255,255,255,1) 0%, rgba(240,240,240,1) 100%);"
+  >
+    <PaymentsHome lang={lang} />
   </BoxContainer>
   <BoxContainer>
-    <CallToAction lang={en}/>
+    <ClientsHome lang={lang} />
   </BoxContainer>
-</LayoutEN>
+  <BoxContainer
+    background="linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(36,36,36,1) 100%)"
+  >
+    <RecoveryHome lang={lang} />
+  </BoxContainer>
+  <BoxContainer>
+    <CallToAction lang={lang} />
+  </BoxContainer>
+</Layout>

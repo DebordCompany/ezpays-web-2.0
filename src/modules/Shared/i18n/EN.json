@@ -41,7 +41,11 @@
         "Negotiations",
         "Treasury"
       ],
-      "subtitle": "Forget about collection tasks Set up your collection policies Improve business relationships",
+      "subtitle": [
+        "Forget about collection tasks ",
+        " Set up your collection policies ",
+        " Improve business relationships"
+      ],
       "footer": {
         "title": "Your company will only have to invoice",
         "subtitle": "Collect or resolve customer arrears Automatic reconciliation Automation from start to finish"

@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+import defaulTheme from "tailwindcss/defaultTheme";
 export default {
   important: true,
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
@@ -22,7 +23,16 @@ export default {
         "8xl": "2000px",
       },
       fontFamily: {
-        poppins: ["Poppins", "sans-serif"],
+        sans: ["lexend", ...defaulTheme.fontFamily.sans],
+      },
+      fontWeight: {
+        light: 300,
+        normal: 400,
+        medium: 500,
+        semibold: 600,
+        bold: 700,
+        extrabold: 800,
+        black: 900,
       },
     },
   },

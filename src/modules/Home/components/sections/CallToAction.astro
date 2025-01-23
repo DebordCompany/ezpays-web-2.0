@@ -2,22 +2,24 @@
 import Heading from "../../../Shared/components/ui/Heading.astro";
 import LinkButton from "../../../Shared/components/ui/LinkButton.astro";
 
-const {lang} = Astro.props
+const { lang } = Astro.props;
 ---
 
-<section class="flex flex-col-reverse h-auto lg:flex-row items-stretch gap-8 md:gap-40">
+<section
+  class="flex flex-col-reverse h-auto lg:flex-row items-stretch gap-8 md:gap-40"
+>
   <div class="flex flex-col justify-between gap-12 max-w-xl h-auto">
-    <Heading level="h2" className="">{lang.shared.call_to_action.title}</Heading>
+    <Heading level="h2" className="">{lang.shared.call_to_action.title}</Heading
+    >
     <ul class="flex flex-col gap-2">
       {
         lang.shared.call_to_action.subtitle.map((solution: string) => {
-          return (
-            <li class="font-light odd:font-semibold">{solution}</li>
-          );
+          return <li class="font-light odd:font-semibold">{solution}</li>;
         })
       }
     </ul>
-    <LinkButton href={lang.shared.call_to_action.button.link} className="w-fit bg-primary">{lang.shared.call_to_action.button.text}</LinkButton>
+    <LinkButton href={lang.shared.call_to_action.button.link} className="w-fit"
+      >{lang.shared.call_to_action.button.text}</LinkButton
+    >
   </div>
-  
 </section>

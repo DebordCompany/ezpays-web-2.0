@@ -1,54 +1,55 @@
 ---
-import BankIcon from "../../../Shared/components/icons/BankIcon.astro";
-import DocumentIcon from "../../../Shared/components/icons/DocumentIcon.astro";
-import EzpaysNewIcon from "../../../Shared/components/icons/EzpaysNewIcon.astro";
 import SlideIcon from "../../../Shared/components/icons/SlideIcon.astro";
 import Heading from "../../../Shared/components/ui/Heading.astro";
 import LinkButton from "../../../Shared/components/ui/LinkButton.astro";
 
-const {lang} = Astro.props
-
+const { lang } = Astro.props;
 ---
 
 <section
   class="flex flex-col-reverse h-auto lg:flex-row items-stretch gap-8 md:gap-40 text-white"
 >
   <div class="flex flex-col justify-between gap-12 max-w-xl h-auto">
-    <div class="flex flex-col gap-4">
+    <div class="flex flex-col gap-8">
       <Heading level="h2" className="">{lang.home.recovery.title}</Heading>
       <ul class="text-soft-gray flex flex-col gap-2">
         {
-          lang.home.recovery.subtitle.map((sub: string)=>{
-            return(
-              <li>{sub}</li>
-            )
+          lang.home.recovery.subtitle.map((sub: string) => {
+            return <li>{sub}</li>;
           })
         }
       </ul>
-      <LinkButton className="w-fit bg-primary">{lang.home.recovery.button.text}</LinkButton>
+      <LinkButton className="w-fit bg-white text-black"
+        >{lang.home.recovery.button.text}</LinkButton
+      >
     </div>
-    <div class="flex flex-col gap-4">
-        <h3  class="text-2xl md:text-4xl">{lang.home.recovery.footer.title}</h3>
-        <ul class="text-soft-gray flex flex-col gap-2">
-          {lang.home.recovery.footer.description.map((des: string)=>{
-            return(
-              <li>{des}</li>
-            )
-          })}
-        </ul>
-        <div class="flex items-center flex-wrap gap-4">
-          <p>1.000.000</p>
-          <SlideIcon className="max-w-24 md:w-full"/>
-          <p>270.000</p>
-        </div>
-        <LinkButton className="w-fit bg-white !text-black" href={lang.home.recovery.footer.button.link}>{lang.home.recovery.footer.button.text}</LinkButton>
+    <div class="flex flex-col gap-8">
+      <h3 class="text-2xl md:text-4xl">{lang.home.recovery.footer.title}</h3>
+      <ul class="text-soft-gray flex flex-col gap-2">
+        {
+          lang.home.recovery.footer.description.map((des: string) => {
+            return <li>{des}</li>;
+          })
+        }
+      </ul>
+      <div class="flex items-center gap-4 w-full">
+        <p>1.000.000</p>
+        <SlideIcon className=" md:w-full" />
+        <p>270.000</p>
+      </div>
+      <LinkButton
+        className="w-fit bg-white text-black"
+        href={lang.home.recovery.footer.button.link}
+        >{lang.home.recovery.footer.button.text}</LinkButton
+      >
     </div>
   </div>
-  <div class="w-full lg:max-w-xl aspect-video lg:aspect-[4/5] overflow-hidden rounded-2xl">
+  <div
+    class="w-full lg:max-w-xl aspect-video lg:aspect-[4/5] overflow-hidden rounded-2xl"
+  >
     <img
       src="/images/impagos.jpg"
       class="object-cover object-center h-full w-full lg:w-fit rounded-md"
     />
-    
   </div>
 </section>

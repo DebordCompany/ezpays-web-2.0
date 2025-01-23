@@ -8,29 +8,32 @@ import ClientsHome from "../modules/Home/components/sections/ClientsHome.astro";
 import RecoveryHome from "../modules/Home/components/sections/RecoveryHome.astro";
 import CallToAction from "../modules/Home/components/sections/CallToAction.astro";
 
-import es from "../modules/Shared/i18n/ES.json"
+import lang from "../modules/Shared/i18n/ES.json";
 ---
 
 <Layout>
   <BoxContainer
-    background="url('/images/hero-bg.webp')"
-    className="grid place-content-end justify-start min-h-screen xl:min-h-[80vh]">
-    <HeroHome lang={es}/>
+    className="grid place-content-end justify-start min-h-screen 2xl:min-h-[80vh] hero-bg"
+  >
+    <HeroHome lang={lang} />
   </BoxContainer>
   <BoxContainer>
-    <HallHome lang={es}/>
-  </BoxContainer>
-  <BoxContainer background="linear-gradient(-270deg, rgba(255,255,255,1) 0%, rgba(240,240,240,1) 100%);">
-    <PaymentsHome lang={es}/>
-  </BoxContainer>
-  <BoxContainer>
-    <ClientsHome lang={es}/>
+    <HallHome lang={lang} />
   </BoxContainer>
   <BoxContainer
-    background="linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(36,36,36,1) 100%)">
-    <RecoveryHome lang={es}/>
+    background="linear-gradient(-270deg, rgba(255,255,255,1) 0%, rgba(240,240,240,1) 100%);"
+  >
+    <PaymentsHome lang={lang} />
   </BoxContainer>
   <BoxContainer>
-    <CallToAction lang={es}/>
+    <ClientsHome lang={lang} />
+  </BoxContainer>
+  <BoxContainer
+    background="linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(36,36,36,1) 100%)"
+  >
+    <RecoveryHome lang={lang} />
+  </BoxContainer>
+  <BoxContainer>
+    <CallToAction lang={lang} />
   </BoxContainer>
 </Layout>

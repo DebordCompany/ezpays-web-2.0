@@ -5,39 +5,39 @@ import PaymentIcon from "../../../Shared/components/icons/PaymentIcon.astro";
 import TouchIcon from "../../../Shared/components/icons/TouchIcon.astro";
 import Heading from "../../../Shared/components/ui/Heading.astro";
 
-const {lang} = Astro.props
+const { lang } = Astro.props;
 ---
 
-<section
-  class="flex flex-col h-auto lg:flex-row items-stretch gap-8 md:gap-40">
-<div class=" w-full lg:max-w-xl aspect-video lg:aspect-[4/5] overflow-hidden rounded-2xl">
-  <img
-    src="/images/clients-home.png"
-    alt="clients ezpays example"
-    class="object-cover object-left h-full w-full lg:w-fit rounded-2xl"
-  />
-</div>
+<section class="flex flex-col h-auto lg:flex-row items-stretch gap-8 md:gap-40">
+  <div
+    class="w-full lg:max-w-xl aspect-video lg:aspect-[4/5] overflow-hidden rounded-2xl"
+  >
+    <img
+      src="/images/clients-home.png"
+      alt="clients ezpays example"
+      class="object-cover object-left h-full w-full lg:w-fit rounded-2xl"
+    />
+  </div>
   <div class="flex flex-col justify-between gap-20 max-w-2xl h-auto">
-    <div class="flex flex-col gap-2">
+    <div class="flex flex-col gap-8">
       <Heading>{lang.home.client.header.title}</Heading>
       <p>
         {lang.home.client.header.subtitle}
       </p>
       <div class="flex items-center gap-4">
-        <TouchIcon className="w-8"/>
-        <LockIcon className="w-8"/>
-        <PaymentIcon className="w-10"/>
+        <TouchIcon className="w-8" />
+        <LockIcon className="w-8" />
+        <PaymentIcon className="w-10" />
       </div>
     </div>
-    <div class="flex flex-col gap-2">
+    <div class="flex flex-col gap-8">
       <Heading>{lang.home.client.footer.title}</Heading>
       <p>
         {lang.home.client.footer.subtitle}
       </p>
       <div>
-        <FullIcon className="w-18"/>
+        <FullIcon className="w-18" />
       </div>
     </div>
   </div>
-  
 </section>

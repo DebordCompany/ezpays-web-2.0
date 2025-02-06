@@ -19,7 +19,9 @@ const { lang } = Astro.props;
           })
         }
       </ul>
-      <LinkButton className="w-fit bg-white text-black"
+      <LinkButton
+        className="w-fit bg-white text-black"
+        href={lang.home.recovery.button.link}
         >{lang.home.recovery.button.text}</LinkButton
       >
     </div>

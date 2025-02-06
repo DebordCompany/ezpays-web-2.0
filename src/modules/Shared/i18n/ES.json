@@ -4,7 +4,7 @@
       "title": "Tecnología que cobra",
       "button": {
         "text": "Haz una demo",
-        "link": "/"
+        "link": "https://calendly.com/sunil_ezpays/demo-ezpays-con-sunil-clone"
       }
     },
     "hall": {
@@ -49,17 +49,28 @@
       ],
       "footer": {
         "title": "Tu empresa solo tendrá que facturar",
-        "subtitle": ["Cobra o resuelve atrasos de clientes","Conciliación automática, Automatización de principio a fin"]
+        "subtitle": [
+          "Cobra o resuelve atrasos de clientes",
+          "Conciliación automática, Automatización de principio a fin"
+        ]
       }
     },
     "client": {
       "header": {
         "title": "De la cuenta del cliente a tu cuenta",
-        "subtitle": ["Tus facuras pagadas de cuanta a cuenta ","Tu cliente paga con seguridad desde su factura ","Conciliacion de los cobros en tu ERP"]
+        "subtitle": [
+          "Tus facuras pagadas de cuanta a cuenta ",
+          "Tu cliente paga con seguridad desde su factura ",
+          "Conciliacion de los cobros en tu ERP"
+        ]
       },
       "footer": {
         "title": "Lo que facturas cobrado en su momento",
-        "subtitle": ["Cuando depende de tu cliente el pago de la factura, hazlo fácil para él.","Añade el botón de pago al enviar tu factura para pagar en el momento. ","O ten informado a tu cliente de cuándo pagar."]
+        "subtitle": [
+          "Cuando depende de tu cliente el pago de la factura, hazlo fácil para él.",
+          "Añade el botón de pago al enviar tu factura para pagar en el momento. ",
+          "O ten informado a tu cliente de cuándo pagar."
+        ]
       }
     },
     "recovery": {
@@ -71,7 +82,7 @@
       ],
       "button": {
         "text": "Recupera deuda",
-        "link": "/"
+        "link": "https://calendly.com/sunil_ezpays/demo-ezpays-con-sunil-clone"
       },
       "footer": {
         "title": "Cobra impagos de años anteriores en 30 dias",
@@ -81,7 +92,7 @@
         ],
         "button": {
           "text": "Comenzar a cobrar",
-          "link": "/"
+          "link": "https://calendly.com/sunil_ezpays/demo-ezpays-con-sunil-clone"
         },
         "claim": "Estás a un fichero de cobrar"
       }
@@ -98,7 +109,7 @@
       ],
       "button": {
         "text": "Agendar una demo",
-        "link": "/"
+        "link": "https://calendly.com/sunil_ezpays/demo-ezpays-con-sunil-clone"
       }
     },
     "navbar": {

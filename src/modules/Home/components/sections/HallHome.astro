@@ -5,19 +5,12 @@ const { lang } = Astro.props;
 ---
 
 <section class="flex flex-col h-auto lg:flex-row items-stretch gap-8 md:gap-40">
-  <div
-    class="w-full lg:max-w-xl aspect-video lg:aspect-[4/5] overflow-hidden rounded-2xl"
-  >
-    <img
-      src="/images/hall.webp"
-      alt="conector image"
-      class="object-cover object-center h-full w-full lg:w-fit rounded-md"
-    />
-  </div>
-  <div class="flex flex-col justify-between gap-4 md:gap-12 max-w-2xl h-auto">
+  <div class="w-full lg:max-w-xl flex flex-col justify-center gap-4 md:gap-12">
     <Heading level="h2">
       {lang.home.hall.title}
     </Heading>
+  </div>
+  <div class="flex flex-col justify-center gap-4 md:gap-12 max-w-2xl h-auto">
     <div class="flex flex-col gap-10">
       <div class="flex flex-col gap-4">
         <h3 class="relative font-bold text-black text-xl md:text-5xl">

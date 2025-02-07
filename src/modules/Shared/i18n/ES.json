@@ -8,7 +8,7 @@
       }
     },
     "hall": {
-      "title": "Conecta y pon tus cobros en piloto automático",
+      "title": "Para empresas que quieren poner sus pagos en piloto automático",
       "items": [
         {
           "title": "Cobra",
@@ -78,7 +78,8 @@
       "subtitle": [
         "Tú empresa dejará de perseguir clientes y reclamar para cobrar",
         "La tecnología lo soluciona con tu cliente, sin intervenciones personales",
-        "El sistema comunica, resuelve y cobra Aunque haya pasado algún tiempo"
+        "El sistema comunica, resuelve y cobra",
+        "Aunque haya pasado algún tiempo"
       ],
       "button": {
         "text": "Recupera deuda",

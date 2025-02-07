@@ -124,6 +124,12 @@
       "decline": {
         "text": "Rechazar"
       }
+    },
+    "og_home": {
+      "title": "Ezpays - Tecnología que cobra",
+      "description": "Cobra tus facturas y recupera tus impagos de manera automática",
+      "image": "https://www.ezpays.io/images/hero-bg.webp",
+      "url": "https://www.ezpays.io"
     }
   }
 }
